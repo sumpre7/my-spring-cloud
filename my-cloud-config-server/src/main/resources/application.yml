@@ -1,0 +1,21 @@
+server:
+  port: 8099
+
+spring:
+  application:
+    name: my-cloud-config-server
+  cloud:
+    config:
+      label: main
+      server:
+        git:
+          uri: https://github.com/sumpre7/config-server
+          search-paths: config
+          username:
+          password:
+          basedir: config-repo/config-repo
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+

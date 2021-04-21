@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      # 配置中心服务地址
+      uri: http://localhost:8099/
+      # 配置名称，一般和git仓库的application-dev.yml对应
+      name: application
+      # 指明远程仓库的分支
+      label: main
+      # 指定不同环境配置文件，和git仓库的 application-dev.yml对应
+      profile: dev
+#      discovery:
+#        enabled: true
+#        service-id: my-cloud-config-server

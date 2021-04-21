@@ -1,0 +1,12 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: my-cloud-consumer
+
+# eureka 配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+
